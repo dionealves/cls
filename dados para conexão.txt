@@ -1,0 +1,14 @@
+servidor: sql5c75a.carrierzone.com
+
+usuário: cartaolide733508
+
+senha: dat2kp16
+
+nome do banco: guia_cartaolidersaude_com
+
+******criação de tabela e inclusão de dados******
+
+$sql = "CREATE TABLE nometabela (id INT(3) NOT NULL AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(60) NOT NULL, sobrenome VARCHAR(60) NOT NULL)";
+mysql_query($sql);
+mysql_query("INSERT INTO Pessoas (Nome, Sobrenome, Idade)
+VALUES ('Roberto', 'Germano', '56')");

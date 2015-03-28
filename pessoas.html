@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Cartão Líder Sáude - A serviço de sua saúde</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.color.js"></script>
+	<script src="js/custom.js"></script>
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="js/jquery-easing-1.3.js" type="text/javascript"></script>
+	<script src="js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#layerslider').layerSlider({
+				autoStart : true,
+				hoverPrevNext : false,
+				animateFirstLayer	: false,
+				thumbnailNavigation : false
+			});
+		});		
+	</script>
+
+	<script type="text/javascript">
+    function formatar_mascara(src, mascara) {
+        var campo = src.value.length;
+        var saida = mascara.substring(0,1);
+        var texto = mascara.substring(campo);
+        if(texto.substring(0,1) != saida) {
+            src.value += texto.substring(0,1);
+        }
+    }
+    </script> 
+   
+</head>
+<body>
+<div id="wrapper">
+	<header id="header" class="container-fluid">
+	  <div class="header-bg">
+		<div class="container">
+			<div class="decoration dec-left visible-desktop"></div>
+			<div class="decoration dec-right visible-desktop"></div>	  
+			<div class="row">
+				<div id="logo" class="span3"><a href="index.html"><img src="images/logo.png" alt="Cartão Líder"/></a></div>
+				<div class="span9">
+					<!-- Social Icons -->
+					<ul class="social-icons">
+						<li class="facebook"><a href="#">Facebook</a></li>
+						<li class="twitter"><a href="#">Twitter</a></li>
+						<li class="linkedin"><a href="#">LinkedIn</a></li>
+						<li class="googleplus"><a href="#">GooglePlus</a></li>
+						<li class="youtube"><a href="#">youtube</a></li>
+						<li class="rss"><a href="#">Rss</a></li>
+					</ul>	
+					<!-- Contact Details -->
+					<div class="contact-details visible-desktop">
+						<ul>
+							<li>Ligue pra gente: (xx37) 9902-7789</li>
+							<li>Rua São Geraldo, 220 | Nova Serrana-MG <a href="mailto:cartaolidersaude@gmail.com">cartaolidersaude@gmail.com</a></li>
+						</ul>
+					</div>			
+					<!-- Search Form -->
+		
+				</div>	
+			</div>
+			<div class="row">
+				<div class="span12">
+					<div class="select-menu hidden-desktop">
+						<select id="selectMenu">
+							<option value="index.html">Home</option>						
+							<option value="about.html">Quem somos</option>
+                            <option value="perguntas.html">Perguntas</option>
+                            <option value="construcao.html">Planos</option>
+                            <option value="construcao.html">Guia de Descontos</option>						
+							<option value="perguntas.html">Perguntas</option>					
+							<option selected value="pessoas.html">Para Pessoas</option>
+                            <option value="empresas.html">Para Empresas</option>								
+							<option value="contato.html">Contato</option>
+						</select>
+					</div>
+					<ul id="menu" class="visible-desktop">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">QUEM SOMOS</a></li>
+                        <li><a href="construcao.html">PLANOS</a></li>
+						<li><a href="perguntas.html">PERGUNTAS</a></li>
+						<li>
+							<a href="guia/index.php">GUIA DE DESCONTOS</a>
+							<ul> 
+								<li><a href="/guia/novaserrana.php">Nova Serrana</a></li>
+								<li><a href="/guia/belohorizonte.php">Belo Horizonte</a></li>
+								<li><a href="/guia/bomdespacho.php">Bom Despacho</a></li>
+								<li><a href="/guia/divinopolis.php">Divinópolis</a></li>
+								<li><a href="/guia/leandroferreira.php">Leandro Ferreira</a></li>
+								<li><a href="/guia/parademinas.php">Pará de Minas</a></li>
+                                <li><a href="/guia/perdigao.php">Perdigão</a></li>
+                                <li><a href="/guia/pitangui.php">Pitangui</a></li>
+							</ul>
+						</li>
+                        <li>
+                        	<a href="credenciamento.html">ADQUIRA</a>
+                            <ul>
+                            	<li><a href="pessoas.html">Para Pessoas</a></li>
+								<li><a href="empresas.html">Para Empresas</a></li>
+                            </ul>
+                        </li> 
+						<li><a href="contato.html">CONTATO</a></li> 
+					</ul>
+				</div>
+			</div>
+			<div class="row visible-desktop">
+				<div class="span12 main-slider"><!-- SLIDER --></div>
+			</div>
+		</div>
+	  </div>
+	</header>
+	<section id="content" class="container-fluid">
+	<div class="container">
+		<div id="headline-page" class="hidden-phone hidden-tablet">
+			<h1>Credenciamento de Pessoas</h1>
+			<div id="crumbs"><a href="index.html">Home</a> / <a href="credenciamento.html">Credenciamento</a> / <a href="pessoas.html" class="active">Pessoas</a></div> 
+		</div>
+		<div class="row">
+        	<div class="span8">
+				<div class="title"><h2>Formulário para credenciamento de associado</h2></div>
+				<p>O cartão desconto oferece a seus associados, a grande oportunidade de adquirir produtos e serviços com desconto exclusivos, tais como: Clinicas medicas, farmácias, óticas, academias, parques aquáticos, casas de shows, cursos, supermercados, restaurantes e etc. Enfim, diversos estabelecimentos da cidade.</p>
+            <form action="confirmacao_pessoas.php" method="POST">
+				<div class="row">
+                <div class="subtitle"><h4>Dados do Associado:</br><hr align="center" width="100%" size="1" color="#368ccc" /></h4></div>
+                    <div class="span5">
+						<div class="form-padding">
+							<label for="f1">Nome Completo:</label>
+							<input type="text" required placeholder="Digite o seu nome completo" name="nome" id="f1" class="form-text" value=""/>
+						</div>
+					</div>
+                    <div class="span3">
+						<div class="form-padding">
+							<label for="f2">Data de Nascimento:</label>
+							<input type="date" required placeholder="12/12/2012"  name="datanascimento" id="f2" class="form-text" value="" size="40"/>
+						</div>
+                    </div>
+                    <div class="span3">
+						<div class="form-padding">
+							<label for="f3">CPF:</label>
+							<input type="text" required placeholder="999.999.999-99" maxlength="14" onkeypress="formatar_mascara(this, '###.###.###-##')" name="cpf" id="f3" class="form-text" value="" size=""/>
+						</div>
+					</div>
+                    <div class="span3">
+						<div class="form-padding">
+							<label for="f4">RG:</label>
+							<input type="text" required name="rg" id="f4" class="form-text" value="" size=""/>
+                        </div>
+                    </div>
+                    <div class="span2">
+						<div class="form-padding">
+							<label for="f5">O. Emissor:</label>
+							<input type="text" required name="oemissor" id="f5" class="form-text" value="" size=""/>
+						</div>
+					</div>
+				</div>
+                </br>&nbsp
+                <div class="row">
+                <div class="subtitle"><h4>Dados Pessoais:</br><hr align="center" width="100%" size="1" color="#368ccc" /></h4></div>
+                    <div class="span3">
+						<div class="form-padding">
+							<label for="f6">Estado Civil:</label>
+							<input type="text" required name="status" id="f6" class="form-text" value=""/>
+						</div>
+					</div>
+                    <div class="span2">
+						<div class="form-padding">
+							<label for="f7">Filhos:</label>
+							<input type="number" name="filhos" id="f7" class="form-text" value="" size="40"/>
+						</div>
+                    </div>
+                    <div class="span3">
+						<div class="form-padding">
+							<label for="f8">Profissão:</label>
+							<input type="text" required name="profissao" id="f8" class="form-text" value="" size=""/>
+						</div>
+					</div>
+                    <div class="span5">
+						<div class="form-padding">
+							<label for="f9">Onde mais utilizará o cartão?:</label>
+							<input type="text" required name="finalidade" id="f9" class="form-text" value="" size=""/>
+                        </div>
+                    </div>
+                    <div class="span3">
+						<div class="form-padding">
+							<label for="f10">Email:</label>
+							<input type="email" required name="email" id="f10" class="form-text" value="" size=""/>
+						</div>
+					</div>
+				</div>
+                </br>&nbsp
+                <div class="row">
+                <div class="subtitle"><h4>Endereço:</br><hr align="center" width="100%" size="1" color="#368ccc" /></h4></div>
+                    <div class="span6">
+						<div class="form-padding">
+							<label for="f11">Logradouro:</label>
+							<input type="text" required name="logradouro" id="f11" class="form-text" value=""/>
+						</div>
+					</div>
+                    <div class="span2">
+						<div class="form-padding">
+							<label for="f12">Número:</label>
+							<input type="number" required name="numero" id="f12" class="form-text" value="" size="40"/>
+						</div>
+                    </div>
+                    <div class="span3">
+						<div class="form-padding">
+							<label for="f13">Cidade:</label>
+							<input type="text" required name="cidade" id="f13" class="form-text" value=""/>
+						</div>
+					</div>
+                    <div class="span1">
+						<div class="form-padding">
+							<label for="f14">Estado:</label>
+							<input type="text" required placeholder="UF" name="uf" id="f14" class="form-text" value="" size=""/>
+						</div>
+                    </div>
+                    <div class="span2">
+						<div class="form-padding">
+							<label for="f15">Telefone1:</label>
+							<input type="tel" required placeholder="(99) 9999-9999" maxlength="12" onkeypress="formatar_mascara(this, '## ####-####')" name="tel1" id="f15" class="form-text" value="" size=""/>
+						</div>
+					</div>
+                    <div class="span2">
+						<div class="form-padding">
+							<label for="f16">Telefone2:</label>
+							<input type="tel" required placeholder="(99) 9999-9999" maxlength="12" onkeypress="formatar_mascara(this, '## ####-####')" name="tel2" id="f16" class="form-text" value="" size=""/>
+                        </div>
+                    </div>
+				</div>
+                </br>&nbsp
+                <div class="row">
+					<div class="span8">
+						<div class="form-padding">
+                            <input type="reset" class="button gray small" value="Apagar" /> 
+							<input type="submit" class="button blue medium" value="Solicitar cadastro"/>
+						</div>
+					</div>
+				</div>				
+				</form>
+			</div>
+			<div class="span4">
+				<div class="headline"><h4>Cidades</h4></div>
+				<ul class="link-list">  
+					<li><a href="novaserrana.html">Nova Serrana</a></li>
+					<li><a href="pitangui.html">Pitangui</a></li>
+					<li><a href="divinopolis.html">Divinópolis</a></li>
+					<li><a href="bomdespacho.html">Bom Despacho</a></li>
+					<li><a href="perdigao.html">Perdigão</a></li>
+					<li><a href="belohorizonte.html">Belo Horizonte</a></li>
+				</ul>
+				<div class="headline"><h4>Especialidades Médicas</h4></div>
+				<p>A Cartão Líder te oferece uma linha completa de cuidados com a sua saúde. Algumas áreas:</p>
+				<div class="tagcloud">
+					<a href="#">Gastroenterologia</a>
+					<a href="#">Obstetrícia</a>
+					<a href="#">Ginecologia</a>
+					<a href="#">Hematologia</a>
+					<a href="#">Oncologia</a>
+					<a href="#">Hospital</a>
+					<a href="#">Medicina</a>
+					<a href="#">Infecciologia</a>
+					<a href="#">Doenças & Feridas</a>
+					<a href="#">Cuidados</a>
+					<a href="#">Nefrologia</a>
+				</div>				
+			</div>
+		</div>
+	</div>
+	</section>
+</div>
+
+<footer id="footer" class="container-fluid">
+	<div class="container">
+		<section class="row">
+			<article class="span3">
+				<h3 class="title">Endereço</h3>
+				<p>São Geraldo, 220 Centro</br>
+                Nova Serrana - MG<br/> 
+				Tel: (37) 9147-0289<br/>  
+				Tel2: (37) 9902-7789</p>
+				<div class="link">
+					Website: <a href="http://cartaolidersaude.com">http://cartaolidersaude.com</a><br>
+					Email: <a href="mailto:cartaolidersaudeo@gmail.com<">cartaolidersaudeo@gmail.com</a>				</div>
+				<ul class="social-icons">
+					<li class="facebook"><a href="#">Facebook</a></li>
+					<li class="twitter"><a href="#">Twitter</a></li>
+					<li class="linkedin"><a href="#">LinkedIn</a></li>
+					<li class="googleplus"><a href="#">GooglePlus</a></li>
+					<li class="youtube"><a href="#">youtube</a></li>
+					<li class="rss"><a href="#">Rss</a></li>
+				</ul>	
+			</article>
+			<article class="span3 navblock">
+				<h3 class="title">Cidades</h3>
+				<ul> 
+					<li><a href="#">Nova Serrana</a></li>
+					<li><a href="#">Pitangui</a></li>
+					<li><a href="#">Divinópolis</a></li>
+					<li><a href="#">Bom Despacho</a></li>
+					<li><a href="#">Perdigão</a></li>
+				</ul>
+			</article>
+			<article class="span3 navblock">
+				<h3 class="title">Especialidades Médicas</h3>
+				<ul> 
+					<li><a href="#">Odontologia</a></li>
+					<li><a href="#">Estética</a></li>
+					<li><a href="#">Pediatria</a></li>
+					<li><a href="#">Dermatologia </a></li>
+					<li><a href="#">Outros</a></li>
+				</ul>
+			</article>
+			<article class="span3">
+				<img alt="" src="images/logofooter.png" class="slogo"/>
+				<p>Nosso maior objetivo é dar oportunidade a todos de terem saúde preventiva e curativa e claro, para aqueles que se sentem capazes de desenvolver seus próprios empreendimentos. </p>
+			</article>
+  </section>
+		<div class="back-top up"><a href="#top"></a></div>
+	</div>
+</footer>
+<footer class="footer-line container-fluid">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span8 alignleft">Cartão Líder Saúde - A Serviço da sua Saúde | Powered by <a href="#">Ótima Design</a></div>
+			<div class="span4 alignright hidden-phone"><a href="index.html">Home</a> | <a href="contato.html">Contato</a> | <a href="Blog_Large_Image.html">Novidades</a> | <a href="#top" class="top up">Top</a></div>
+		</div>
+	</div>
+</footer>
+</div>
+</div></body>
+</html>
