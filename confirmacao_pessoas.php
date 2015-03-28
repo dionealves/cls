@@ -25,7 +25,7 @@ $ip        = $_SERVER['REMOTE_ADDR'];           //função para pegar o ip do us
 $hora      = date("H:i");                       //para pegar a hora com a função date
 
 //aqui envia o e-mail para você
-mail ("cartaolidersaude@gmail.com",                       //email aonde o php vai enviar os dados do form
+mail ("dione.dast@gmail.com",                       //email aonde o php vai enviar os dados do form
       "$Dados Para contato",
       "Nome: $nome\nData: $data\nIp: $ip\nHora: $hora\nData de Nascimento: $datanascimento\nCPF: $cpf\nRG: $rg\nOrgão Emissor: $oemissor\nEstado Civil: $status\nFilhos: $filhos\nProfissão: $profissao\nEmail: $email\nLogradouro: $logradouro\nNº: $numero\nCidade: $cidade\nUF: $uf\nTelefone 1: $tel1\nTelefone 2: $tel2",
       "From: $email"

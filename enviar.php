@@ -15,7 +15,7 @@ $navegador = $_SERVER['HTTP_USER_AGENT'];       //função para pegar o navegado
 $hora      = date("H:i");                       //para pegar a hora com a função date
 
 //aqui envia o e-mail para você
-mail ("cartaolidersaude@gmail.com",                       //email aonde o php vai enviar os dados do form
+mail ("dione.dast@gmail.com",                       //email aonde o php vai enviar os dados do form
       "$Dados Para contato",
       "Nome: $nome\nData: $data\nIp: $ip\nHora: $hora\nData de Nascimento: $datanascimento\nEmail: $email\nTel: $tel\n\nMensagem: $mensagem",
       "From: $email"
